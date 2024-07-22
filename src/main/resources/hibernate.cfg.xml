@@ -11,6 +11,6 @@
 		<property name="connection.username">root</property>
 		<property name="connection.password">vKCI8RsgHKBFa7RXnPnrXyeu4AWV2VRP</property>
 		
-		<mapping class="pti.sb_treasurehunter_mvc.model.User" />
+		<mapping class="hm.Java_FE_Treasurehuntgame_Homework.model.User" />
 	</session-factory>
 </hibernate-configuration>
