@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC
-	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
-	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
 <hibernate-configuration>
-  <session-factory>
-    <!-- Database connection settings --> <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-    <property name="connection.url">jdbc:mysql://localhost:3306/treasuregamedb</property> 
-    <property name="connection.username">root</property> 
-    <property name="connection.password">root</property>
-    
-    <mapping class="hm.Java_FE_Treasurehuntgame_Homework.model.User" />
-    
-  </session-factory>
+	<session-factory>
+		<!-- Database connection settings -->
+		<property name="connection.driver_class">org.postgresql.Driver</property>
+		<property name="connection.url">jdbc:postgresql://dpg-cqf631pu0jms739pkp4g-a/treasurehunterdb_9kgj</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">vKCI8RsgHKBFa7RXnPnrXyeu4AWV2VRP</property>
+		
+		<mapping class="pti.sb_treasurehunter_mvc.model.User" />
+	</session-factory>
 </hibernate-configuration>
