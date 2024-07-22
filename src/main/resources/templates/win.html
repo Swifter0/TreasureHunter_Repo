@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link rel="stylesheet" th:href="@{/style.css}"/>
+		
+		<style>
+			
+			p {
+				
+				font-size: 30px;
+				color: rgb(255, 255, 255);
+				background-color: black;
+				display: inline-block;
+				
+				
+			}
+			
+		</style>
+	
+	</head>
+	
+	
+	<body id="winnerPic">
+		
+		<p th:if="${win == 1}" th:text="'The winner is :' + ${userdto.getName()}"></p>
+		<p th:if="${win == 2}">You lost a life! Be careful!</p>
+		<br/>
+		<p th:text="'Least steps for winning was :' + ${userdto.getLeastSteps()}"></p>
+		<br/>
+		<p th:text="'Remaining Lifes :' + ${userdto.getLife()}"></p>
+	
+	
+		<p>Do you want to start a new game?</p>
+		
+		
+		<form action="/user/restart" method="get">
+			
+			<select name="restart">
+				
+				<option value="1">Yes</option>
+				<option value="2">No</option>
+				
+			</select>
+			
+			<input type="hidden" name="userId" th:value="${userdto.getId()}">
+			<input type="submit"/>
+			
+		</form>
+		
+	
+		
+	</body>
+</html>

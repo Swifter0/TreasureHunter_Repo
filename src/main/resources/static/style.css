@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+.row {
+	
+	float: left;
+	width: 100%;
+	
+}
+
+.square {
+	
+	float: left;
+	width: 100px;
+	height: 100px;
+	border-style: solid;
+	border-color: maroon;
+	
+}
+
+.skull {
+	
+	background-size: 100px 100px;
+	background-image: url(redSkull.jpg);
+	
+}
+
+.chest {
+	
+	background-size: 100px 100px;
+	background-image: url(mimicChest.jpg);
+	
+}
+
+.empty {
+	
+	background-color: darkgrey;
+	
+}
+
+#loginPTag {
+	
+	font-size: xx-large;
+	color: chartreuse;
+	
+}
+
+#feedbackPTag {
+	
+	font-size: xx-large;
+	color: darkred;
+	
+}
+
+#youDied {
+	
+	height: 300px;
+	width: 500px;
+	border-style: solid;
+	position: absolute;
+	left: 500px; top: 200px;
+	background-size: 500px 300px;
+	background-image: url(youDied.jpg);
+	
+}
+
+#winnerPic {
+	
+	background-image: url(winner.jpg);
+	
+}
+
+

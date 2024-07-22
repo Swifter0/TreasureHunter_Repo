@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link rel="stylesheet" th:href="@{/style.css}"/>
+	</head>
+	
+	
+	<body>
+		
+		<p id="loginPTag">Please login</p>
+		
+		<form action="/user/login" method="post">
+			
+			<input type="text" name="name" placeholder="User Name"/>
+			<input type="password" name="password" placeholder="Password"/>
+			<input type="submit"/>
+			
+		</form>
+		
+		<p id="feedbackPTag" th:if="${feedbackdto} != null" th:text="${feedbackdto.getFeedBack()}"></p>
+	
+	</body>
+</html>

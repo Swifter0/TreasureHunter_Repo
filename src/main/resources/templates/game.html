@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link rel="stylesheet" th:href="@{/style.css}"/>
+		<script th:src="@{/myscript.js}"></script>
+	</head>
+	
+	
+	<body>
+		
+		<div class="row">
+			
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			
+		</div>
+		
+		<div class="row">
+			
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			
+		</div>
+		
+		<div class="row">
+			
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			
+		</div>
+		
+		<div class="row">
+			
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			
+		</div>
+		
+		<div class="row">
+			
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			
+		</div>
+		
+		
+		<p th:text="'Player name :' + ${userdto.getName()}"></p>
+	
+		<p th:text="'Remaining lifes :' + ${userdto.getLife()}"></p>
+	
+		<p id="steps">Steps :0</p>
+		
+		
+		<form style="display: none;" action="/user/game" method="get">
+			
+			<input id="idForm" type="number" name="userid" th:value="${userdto.getId()}"/>
+			<input id="winForm" type="number" name="win"/>
+			<input id="stepsForm" type="number" name="steps"/>
+			<input id="submitForm" type="submit"/>
+			
+		</form>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>
